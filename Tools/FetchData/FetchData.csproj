@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1727676-7A9B-4FFD-8BA9-D5BF3F9FBC48}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FetchData</RootNamespace>
+    <AssemblyName>FetchData</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\account.cs" />
+    <Compile Include="Model\account_old.cs" />
+    <Compile Include="Model\account_pwd.cs" />
+    <Compile Include="Model\ad_queue.cs" />
+    <Compile Include="Model\ball_card.cs" />
+    <Compile Include="Model\ball_card_day_count.cs" />
+    <Compile Include="Model\block_list.cs" />
+    <Compile Include="Model\cardbalance.cs" />
+    <Compile Include="Model\cardlastid.cs" />
+    <Compile Include="Model\columns_priv.cs" />
+    <Compile Include="Model\count_stat.cs" />
+    <Compile Include="Model\cq_academebuild.cs" />
+    <Compile Include="Model\cq_academe_type.cs" />
+    <Compile Include="Model\cq_action.cs" />
+    <Compile Include="Model\cq_addresslist.cs" />
+    <Compile Include="Model\cq_advert_log.cs" />
+    <Compile Include="Model\cq_advert_queue.cs" />
+    <Compile Include="Model\cq_ad_log.cs" />
+    <Compile Include="Model\cq_ad_queue.cs" />
+    <Compile Include="Model\cq_ammo_effect.cs" />
+    <Compile Include="Model\cq_ammo_skill.cs" />
+    <Compile Include="Model\cq_ammo_skilltype.cs" />
+    <Compile Include="Model\cq_announce.cs" />
+    <Compile Include="Model\cq_artifact.cs" />
+    <Compile Include="Model\cq_artifact_drop_shape_chance.cs" />
+    <Compile Include="Model\cq_artifact_function_grade.cs" />
+    <Compile Include="Model\cq_atk_grade_type.cs" />
+    <Compile Include="Model\cq_auction.cs" />
+    <Compile Include="Model\cq_auction_system_item.cs" />
+    <Compile Include="Model\cq_bonus.cs" />
+    <Compile Include="Model\cq_brother.cs" />
+    <Compile Include="Model\cq_brother_attr.cs" />
+    <Compile Include="Model\cq_brother_type.cs" />
+    <Compile Include="Model\cq_bussiness.cs" />
+    <Compile Include="Model\cq_card.cs" />
+    <Compile Include="Model\cq_card2.cs" />
+    <Compile Include="Model\cq_card3.cs" />
+    <Compile Include="Model\cq_chiptype.cs" />
+    <Compile Include="Model\cq_config.cs" />
+    <Compile Include="Model\cq_contract.cs" />
+    <Compile Include="Model\cq_contracttype.cs" />
+    <Compile Include="Model\cq_controlcenter.cs" />
+    <Compile Include="Model\cq_crystal_gui_setup.cs" />
+    <Compile Include="Model\cq_deluser.cs" />
+    <Compile Include="Model\cq_disdain.cs" />
+    <Compile Include="Model\cq_dropitemrule.cs" />
+    <Compile Include="Model\cq_dup_name.cs" />
+    <Compile Include="Model\cq_dynamap.cs" />
+    <Compile Include="Model\cq_dynanpc.cs" />
+    <Compile Include="Model\cq_dyna_rank_rec.cs" />
+    <Compile Include="Model\cq_dyna_rank_type.cs" />
+    <Compile Include="Model\cq_enemy.cs" />
+    <Compile Include="Model\cq_eudemon_exchg_egg.cs" />
+    <Compile Include="Model\cq_family.cs" />
+    <Compile Include="Model\cq_family_attr.cs" />
+    <Compile Include="Model\cq_forge_gem.cs" />
+    <Compile Include="Model\cq_friend.cs" />
+    <Compile Include="Model\cq_generator.cs" />
+    <Compile Include="Model\cq_globalvariable.cs" />
+    <Compile Include="Model\cq_goods.cs" />
+    <Compile Include="Model\cq_item.cs" />
+    <Compile Include="Model\cq_itemaddition.cs" />
+    <Compile Include="Model\cq_itemex.cs" />
+    <Compile Include="Model\cq_itemtype.cs" />
+    <Compile Include="Model\cq_item_value_type.cs" />
+    <Compile Include="Model\cq_leaveword.cs" />
+    <Compile Include="Model\cq_levexp.cs" />
+    <Compile Include="Model\cq_levexp10.cs" />
+    <Compile Include="Model\cq_levexp100.cs" />
+    <Compile Include="Model\cq_levexp_skill.cs" />
+    <Compile Include="Model\cq_lifeskill.cs" />
+    <Compile Include="Model\cq_lifeskilltype.cs" />
+    <Compile Include="Model\cq_lottery.cs" />
+    <Compile Include="Model\cq_macross.cs" />
+    <Compile Include="Model\cq_magic.cs" />
+    <Compile Include="Model\cq_magictype.cs" />
+    <Compile Include="Model\cq_map.cs" />
+    <Compile Include="Model\cq_mapitemgen.cs" />
+    <Compile Include="Model\cq_message.cs" />
+    <Compile Include="Model\cq_mission.cs" />
+    <Compile Include="Model\cq_module_star.cs" />
+    <Compile Include="Model\cq_monsterbook.cs" />
+    <Compile Include="Model\cq_monsterexp.cs" />
+    <Compile Include="Model\cq_monstertype.cs" />
+    <Compile Include="Model\cq_monster_attribute_type.cs" />
+    <Compile Include="Model\cq_npc.cs" />
+    <Compile Include="Model\cq_npc_income.cs" />
+    <Compile Include="Model\cq_passway.cs" />
+    <Compile Include="Model\cq_password.cs" />
+    <Compile Include="Model\cq_pathset.cs" />
+    <Compile Include="Model\cq_pet.cs" />
+    <Compile Include="Model\cq_pk_bonus.cs" />
+    <Compile Include="Model\cq_point_allot.cs" />
+    <Compile Include="Model\cq_portal.cs" />
+    <Compile Include="Model\cq_production.cs" />
+    <Compile Include="Model\cq_production_type.cs" />
+    <Compile Include="Model\cq_quantarule.cs" />
+    <Compile Include="Model\cq_quest.cs" />
+    <Compile Include="Model\cq_rbn_type.cs" />
+    <Compile Include="Model\cq_rebirth.cs" />
+    <Compile Include="Model\cq_region.cs" />
+    <Compile Include="Model\cq_relation_type.cs" />
+    <Compile Include="Model\cq_research.cs" />
+    <Compile Include="Model\cq_research_type.cs" />
+    <Compile Include="Model\cq_robot.cs" />
+    <Compile Include="Model\cq_robottype.cs" />
+    <Compile Include="Model\cq_robot_research_type.cs" />
+    <Compile Include="Model\cq_robot_syncytial.cs" />
+    <Compile Include="Model\cq_robot_technopoint.cs" />
+    <Compile Include="Model\cq_robot_uplevel.cs" />
+    <Compile Include="Model\cq_score.cs" />
+    <Compile Include="Model\cq_shape.cs" />
+    <Compile Include="Model\cq_ship.cs" />
+    <Compile Include="Model\cq_shipmission.cs" />
+    <Compile Include="Model\cq_shipmission_private.cs" />
+    <Compile Include="Model\cq_shippath.cs" />
+    <Compile Include="Model\cq_shiprecord.cs" />
+    <Compile Include="Model\cq_shiprecordbook.cs" />
+    <Compile Include="Model\cq_shiptimetable.cs" />
+    <Compile Include="Model\cq_shiptype.cs" />
+    <Compile Include="Model\cq_skill.cs" />
+    <Compile Include="Model\cq_starmission.cs" />
+    <Compile Include="Model\cq_starmission_map.cs" />
+    <Compile Include="Model\cq_starmission_prize_rule.cs" />
+    <Compile Include="Model\cq_statistic.cs" />
+    <Compile Include="Model\cq_status.cs" />
+    <Compile Include="Model\cq_strres.cs" />
+    <Compile Include="Model\cq_student_type.cs" />
+    <Compile Include="Model\cq_superman.cs" />
+    <Compile Include="Model\cq_synattr.cs" />
+    <Compile Include="Model\cq_syndicate.cs" />
+    <Compile Include="Model\cq_synwar_cfg.cs" />
+    <Compile Include="Model\cq_sys_bank.cs" />
+    <Compile Include="Model\cq_sys_message.cs" />
+    <Compile Include="Model\cq_sys_shop_price.cs" />
+    <Compile Include="Model\cq_table.cs" />
+    <Compile Include="Model\cq_task.cs" />
+    <Compile Include="Model\cq_title.cs" />
+    <Compile Include="Model\cq_titletype.cs" />
+    <Compile Include="Model\cq_token.cs" />
+    <Compile Include="Model\cq_totalscore.cs" />
+    <Compile Include="Model\cq_totem_add.cs" />
+    <Compile Include="Model\cq_totem_pole_type.cs" />
+    <Compile Include="Model\cq_trade_buy.cs" />
+    <Compile Include="Model\cq_trade_corner_type.cs" />
+    <Compile Include="Model\cq_trade_income.cs" />
+    <Compile Include="Model\cq_trade_sell.cs" />
+    <Compile Include="Model\cq_transtype.cs" />
+    <Compile Include="Model\cq_trap.cs" />
+    <Compile Include="Model\cq_traptype.cs" />
+    <Compile Include="Model\cq_tutor.cs" />
+    <Compile Include="Model\cq_tutor_access.cs" />
+    <Compile Include="Model\cq_tutor_battle_limit_type.cs" />
+    <Compile Include="Model\cq_tutor_contributions.cs" />
+    <Compile Include="Model\cq_tutor_type.cs" />
+    <Compile Include="Model\cq_unlawful.cs" />
+    <Compile Include="Model\cq_userlev.cs" />
+    <Compile Include="Model\cq_user_atk_monster_type.cs" />
+    <Compile Include="Model\cq_user_statistic.cs" />
+    <Compile Include="Model\cq_user_x.cs" />
+    <Compile Include="Model\cq_vip_usetimes.cs" />
+    <Compile Include="Model\cq_wanted.cs" />
+    <Compile Include="Model\cq_weapon_evolve.cs" />
+    <Compile Include="Model\cq_weapon_improve.cs" />
+    <Compile Include="Model\cq_weapon_skill.cs" />
+    <Compile Include="Model\cq_weapon_uplv.cs" />
+    <Compile Include="Model\crystal_shop.cs" />
+    <Compile Include="Model\drop_rule.cs" />
+    <Compile Include="Model\drop_stone_rule.cs" />
+    <Compile Include="Model\dump_attack.cs" />
+    <Compile Include="Model\dump_useruplev.cs" />
+    <Compile Include="Model\dynamotor_power.cs" />
+    <Compile Include="Model\emoneybak.cs" />
+    <Compile Include="Model\emoneycount.cs" />
+    <Compile Include="Model\emoneylastid.cs" />
+    <Compile Include="Model\emoneysum.cs" />
+    <Compile Include="Model\emplacement_atk_process.cs" />
+    <Compile Include="Model\emplacement_power.cs" />
+    <Compile Include="Model\e_money.cs" />
+    <Compile Include="Model\e_money_month.cs" />
+    <Compile Include="Model\fee.cs" />
+    <Compile Include="Model\jz_forbidname.cs" />
+    <Compile Include="Model\logon.cs" />
+    <Compile Include="Model\model_lev_type.cs" />
+    <Compile Include="Model\model_uplev_type.cs" />
+    <Compile Include="Model\serial.cs" />
+    <Compile Include="Model\shortcut_key.cs" />
+    <Compile Include="Model\st_robotsortword.cs" />
+    <Compile Include="Model\st_robotsortword_ana.cs" />
+    <Compile Include="Model\st_synlev.cs" />
+    <Compile Include="Model\st_synuserbattlelev.cs" />
+    <Compile Include="Model\userlevelsort.cs" />
+    <Compile Include="Model\usermoneysort.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

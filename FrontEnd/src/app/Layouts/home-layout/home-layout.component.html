@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="wrapper__inner  home-content">
+        <app-header></app-header>
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-4 col-xl-3">
+                    <app-left-side></app-left-side>
+                </aside>
+                <main class="col-md-8 col-xl-9 mt-4 mt-sm-0">
+                    <router-outlet></router-outlet>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer-content  d-flex h-100 align-items-center">
+            <div class="flex-grow-1 p-2">
+                <img src="https://volam2.conco.online/images/kingsoft.png" alt="Kingsoft">
+            </div>
+            <div class="flex-grow-1 p-2">
+                <div class="text-muted">Bản quyền trò chơi thuộc công ty
+                    Kingsoft. <a href="https://volam2.conco.online/home" title="Võ Lâm 2 Private">V&otilde;
+                        L&acirc;m Truyền Kỳ 2</a>
+                    phân phối bản
+                    không chính thức có sửa đổi.
+                </div>
+                <div class="text-muted d-none d-sm-block">Hãy cân nhắc kỹ trước khi tham gia.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -125,7 +125,8 @@ namespace NHDSolution
         {
             try
             {
-                this.Client.Disconnect();
+                this.Logger.Error($"[DISCONNECTED]-[{DateTime.Now:HH:mm:ss}]-[{this.skills.Count}]");
+                this.skills = new List<byte[]>();
             }
             catch (Exception ex)
             {
@@ -140,7 +141,7 @@ namespace NHDSolution
             }
             catch (Exception ex)
             {
-                this.Logger.Error($"[ERROR]-[{DateTime.Now:HH:mm:ss}]-[{ex.StackTrace}]-[Client_DataReceived]");
+                // this.Logger.Error($"[ERROR]-[{DateTime.Now:HH:mm:ss}]-[{ex.StackTrace}]-[Client_DataReceived]");
             }
         }
 

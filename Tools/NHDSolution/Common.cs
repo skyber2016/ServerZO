@@ -9,6 +9,6 @@ namespace NHDSolution
 {
     public static class Common
     {
-        public static string IP_SERVER = "45.119.86.57";
+        public static string IP_SERVER = "103.57.221.206";
     }
 }

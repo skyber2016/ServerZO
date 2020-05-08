@@ -58,13 +58,11 @@ namespace NHDSolution
         {
             try
             {
-                //var user = this.Users.FirstOrDefault(x => x.Game.Client.RemoteEndPoint.ToString() == e.Client.RemoteEndPoint.ToString());
-                //if (user != null)
-                //{
-                //    user.Game.Client.Disconnect(false);
-                //    user.Disconnect();
-                //    this.Users.Remove(user);
-                //}
+                var user = this.Users.FirstOrDefault(x => x.Game.Client.RemoteEndPoint.ToString() == e.Client.RemoteEndPoint.ToString());
+                if (user != null)
+                {
+                    user.Disconnect();
+                }
             }
             catch (Exception ex)
             {
